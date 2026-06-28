@@ -1,19 +1,31 @@
-# football-league-sql
+## football-league-sql
 MySQL project analysing a football league dataset
 
 ## This is a practice project using a fictional football league dataset,created to demonstrate SQL skills. 
 
-### SQL concepts covered
+## SQL concepts covered
 - SELECT,WHERE,ORDER BY
 - JOIN
 - GROUP BY ,HAVING
 - Aggregated functions : COUNT,SUM
 - Filtering with conditions (>,=)
 
-#### Dataset Schema
+## Dataset Schema
 Teams : teams info ( team id PK, name, city, founded, coach)
 Players :  player info (player id PK, name, position, age, nationality, team_id FK)
 Macthes : match results (match id PK, home_team id FK, away_team id FK, match date,  stadium , home score, away score )
 Goals : goal details ( goal id PK, match id FK, player ID FK, minute, goal type)
 
-#####
+## Insights
+- Top scorer was Christos Tzolis (PAOK FC) with 5 goals
+- PAOK FC was the team with the most goals scored
+- 5 players scored mor ethan 2 goals throughout the season
+- Open play dominated with 21 goals,followed by Penalty (5) and Freek Kick(3)
+- Only 2 goals out of 10 (20%) ended in a draw
+- 6 goals were scored after the 75th minute
+
+## Tools used
+- MySQL 8.0
+- MySQL Workbenck
+
+
