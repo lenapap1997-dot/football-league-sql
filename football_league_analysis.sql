@@ -155,7 +155,7 @@ select m.match_date,
  t2.team_name as away_team
 from Matches as m
 join  Teams  as t1 on m.home_team_id=t1.team_id
-join Teams  as t2 on m.home_team_id = t2.team_id;
+join Teams  as t2 on m.away_team_id = t2.team_id;
 
 
 
